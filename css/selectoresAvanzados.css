@@ -1,0 +1,26 @@
+/* Seleccionamos solo los parrafos que sean hijos directos de un div */
+div > p {
+    font-size: 25px;
+    color: red;
+}
+
+/* 
+input[type] {
+
+}
+
+input [type="text"] {
+
+} 
+*/
+
+/* Herencia */
+body {
+    font-size: 16px;
+    color: blue;
+}
+
+article {
+    font-size: 20px;
+    color: brown;
+}

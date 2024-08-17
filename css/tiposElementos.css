@@ -1,0 +1,37 @@
+/* 
+Elementos en bloque: Los elementos en bloque son aquellos que ocupan todo el ancho disponible de su contenedor, lo que significa que, por defecto, se extienden a lo largo de la página (de izquierda a derecha en un documento de flujo normal). Comienzan en una nueva línea y empujan el contenido siguiente hacia abajo.
+Ejemplos comunes: div, p, h1,h2,h3,ul,ol,li,section,article,header,footer
+
+Elementos en línea: Los elementos en línea solo ocupan el espacio necesario para su contenido y no fuerzan una nueva línea después de ellos. Se alinean uno al lado del otro horizontalmente si hay espacio disponible.
+Ejemplos comunes: span, a, img, strong, br, button, textarea
+ */
+
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p, div {
+    background: #ccc;
+    padding: 10px;
+    width: 500px;
+    display: inline-block;
+}
+
+/* a {
+    color: #fff;
+    background: #000;
+    padding: 10px;
+} */
+
+/* Por defecto a los elementos de tipo linea no se le pueden agregar un padding, width, height, pero se pueden convertir, haciendo lo siguiente: */
+
+/* El valor inline-block de la propiedad CSS display es una combinación útil que permite a un elemento comportarse como un elemento en línea pero con algunas características de los elementos en bloque. Este comportamiento híbrido es particularmente valioso cuando se desea que un elemento mantenga ciertas propiedades de los elementos en línea y de los elementos en bloque. */
+
+a {
+    color: #fff;
+    background: #000;
+    padding: 10px;
+    display: inline-block;
+    height: 50px;
+}

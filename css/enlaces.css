@@ -1,0 +1,29 @@
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* 
+El pseudo-clase :hover en CSS es una herramienta poderosa para mejorar la interactividad y la experiencia de usuario en una página web. Se usa para aplicar estilos específicos a un elemento cuando el usuario coloca el cursor sobre él (hover), sin hacer clic. Se aplica directamente a un selector en CSS, y los estilos definidos dentro de :hover se activan cuando el cursor se coloca sobre el elemento correspondiente.
+
+*/
+a:hover {
+    background: #f9a03f;
+    color: #fff;
+}
+
+/* Enlace sin visitar */
+a:link {
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+a:visited {
+    color: aqua;
+}
+
+/* Estado del enlace mientras se esta haciendo click */
+a:active {
+    text-decoration: underline;
+}

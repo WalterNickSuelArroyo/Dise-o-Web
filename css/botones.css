@@ -1,0 +1,62 @@
+body {
+    background: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #201C21;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* TAMAÑOS */
+.small {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.medium {
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.big {
+    font-size: 18px;
+    padding: 20px 25px;
+}
+
+.extra-big {
+    font-size: 20px;
+    padding: 25px 30px;
+}
+
+/* COLORES */
+.azul {
+    background: blue;
+}
+
+.verde {
+    background: green;
+}
+
+.naranja {
+    background: orange;
+}
+
+/* EFECTOS */
+.border-radius {
+    border-radius: 50px;
+}
+

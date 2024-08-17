@@ -1,0 +1,13 @@
+.grande {
+    font-size: 28px;
+}
+
+/* Los id no se suelen usar para estilos, lo recomendable solo usar class */
+#rojo {
+    color: red;
+}
+
+/* Se puede hacer diferentes combinaciones
+.main article p {
+
+} */

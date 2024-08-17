@@ -1,0 +1,34 @@
+/* 
+Colores por nombre: CSS incluye una lista de colores predeterminados que pueden ser referenciados por nombre. Estos nombres representan colores comunes como red, blue, green, etc.
+
+Hexadecimal: Los colores hexadecimales se especifican con un signo # seguido de seis dígitos que representan los valores de los componentes rojo (R), verde (G) y azul (B) en formato hexadecimal.
+
+RGB: Especifica los colores mediante la combinación de los valores de los componentes rojo, verde y azul en formato decimal. Formato: rgb(255, 87, 51), donde cada valor va de 0 a 255.
+
+RGBA: Es una extensión de RGB que añade un cuarto componente, alpha, para controlar la opacidad (transparencia) del color. Formato: rgba(255, 87, 51, 0.5), donde el valor de alpha varía de 0 (totalmente transparente) a 1 (totalmente opaco).
+
+*/
+
+/* .caja {
+    width: 200px;
+    height: 200px;
+    background: #000;
+} */
+
+/* .caja {
+    width: 200px;
+    height: 200px;
+    background: rgb(215, 38, 61);
+} */
+
+/* .caja {
+    width: 200px;
+    height: 200px;
+    background: #328BF0;
+} */
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: rgba(215, 38, 61, 0.2);
+}

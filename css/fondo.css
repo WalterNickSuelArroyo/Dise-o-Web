@@ -1,0 +1,31 @@
+/* body {
+    background: #5F04B4;
+} */
+
+/* body {
+    background: url(img/paisaje.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+} */
+
+/* Otra forma
+body {
+    background: url(img/paisaje.jpg) no-repeat fixed center;
+    background-size: cover;
+} */
+
+/* .fondo {
+    width: 600px;
+    height: 600px;
+    background: url(img/paisaje.jpg) #000;
+    background-repeat: no-repeat;
+    background-size: 50%;
+} */
+
+body {
+    background: url(img/moroccan-flower.png);
+    background-repeat: repeat;
+    background-attachment: scroll;
+}

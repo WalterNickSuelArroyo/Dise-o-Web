@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #0e6ba8;
+    margin: 20px;
+    float: left;
+}
+
+/* .cajaPadre {
+    margin: 20px;
+    background: #2e294e;
+    width: 500px;
+    height: 500px;
+    position: relative;
+} */
+
+/* .posicionada {
+    background: #6695e8;
+    position: relative;
+    left: 200px;
+    top: 50px;
+} */
+
+/* .posicionada {
+    background: #6695e8;
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+} */
+
+/* .posicionada {
+    background: #6695e8;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+} */
+
+.posicionada {
+    background: #6695e8;
+
+}
+
+/* 
+
+En CSS, la propiedad position es fundamental para controlar el posicionamiento de los elementos HTML en una página web. Permite determinar cómo se debe colocar un elemento en el documento y cómo interactúa con otros elementos en términos de flujo de documento y superposición. Aquí están los valores que puede tomar y cómo funcionan:
+
+static: Es el valor por defecto para todos los elementos. El elemento se posiciona según el flujo normal del documento, sin respetar las propiedades top, bottom, left, y right.
+
+relative: El elemento se posiciona relativo a su posición original en el flujo normal del documento. Permite mover el elemento utilizando top, bottom, left, y right, pero sin sacarlo de su flujo normal, lo que significa que aún ocupa espacio en el documento como si estuviera en posición estática.
+
+absolute: El elemento se saca del flujo normal del documento y no afecta la posición de otros elementos (es decir, no ocupa espacio físico en la página). Utiliza top, bottom, left, y right para moverse respecto a ese contenedor.
+
+fixed: Similar a absolute, pero siempre se posiciona en relación con la ventana del navegador. No se mueve al hacer scroll por la página. Ideal para elementos como barras de navegación que deben permanecer visibles todo el tiempo.
+
+float: La propiedad float en CSS se utiliza para colocar un elemento a la izquierda o a la derecha de su contenedor, permitiendo que el texto y los elementos en línea fluyan a su alrededor. Los valores más comunes para float son left, right y none.
+*/

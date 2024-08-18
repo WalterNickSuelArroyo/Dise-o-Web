@@ -1,0 +1,51 @@
+p::first-letter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p::first-line {
+    background: #cf5c36;
+    line-height: 40px;
+}
+
+*::selection {
+    background: #f9a03f;
+    color: #fff;
+}
+
+.caja {
+    background: #f9a03f;
+    height: 150px;
+    width: 150px;
+}
+
+.caja::before {
+    content: 'Contenido Antes de la caja';
+    display: block;
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.caja::after {
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #000;
+    position: relative;
+    left: 120px;
+}
+
+/* 
+El pseudoelemento ::selection en CSS se utiliza para aplicar estilos a la parte de un documento que el usuario selecciona, generalmente con el cursor del mouse o el teclado. Esto permite personalizar la apariencia del texto u otros elementos cuando son resaltados o seleccionados.
+*/
+
+/* 
+
+Los pseudoelementos ::before y ::after en CSS se utilizan para insertar contenido antes o después del contenido real de un elemento, sin necesidad de modificar el HTML. Estos pseudoelementos son muy útiles para agregar decoraciones, iconos, o cualquier otro contenido adicional que se necesite alrededor de un elemento.
+
+before: Inserta contenido antes del contenido real de un elemento.
+after: Inserta contenido después del contenido real de un elemento.
+
+Para que ::before y ::after funcionen, es necesario definir la propiedad content. Esta propiedad especifica qué contenido se insertará y puede incluir texto, imágenes (a través de url()), o estar vacía.
+*/

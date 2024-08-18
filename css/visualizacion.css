@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+div, a {
+    background: #ccc;
+}
+
+a {
+    /* display: block; */
+    /* display: none; */
+    /* visibility: hidden; */
+    background: #246eb9;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.caja {
+    color: #000;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    overflow: auto;
+}
+
+.contenedor {
+    width: 600px;
+    background-color: #ccc;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
+.contenedor2 .caja{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.azul {
+    background: blue;
+    z-index: 1;
+}
+
+.gris {
+    background: gray;
+    left: 50px;
+    bottom: 80px;
+    z-index: 2;
+}
+
+/* 
+La propiedad display en CSS es crucial para controlar el comportamiento de caja de los elementos en la página web, es decir, cómo se muestran en relación con ellos mismos y sus elementos hermanos. Es uno de los aspectos más fundamentales para diseñar y manejar layouts en CSS. Aquí te detallo los valores más comunes y sus efectos:
+
+block: Los elementos block ocupan todo el ancho disponible de su contenedor, independientemente de su contenido, y siempre comienzan en una nueva línea.
+
+inline: Los elementos inline no comienzan en una nueva línea y solo ocupan tanto ancho como su contenido lo requiere.
+
+inline-block: Combina comportamientos de inline y block: el elemento no rompe la línea pero permite definir ancho y alto como un elemento block.
+
+none: El elemento no se muestra y se elimina del flujo del documento, como si no existiera. No ocupa espacio y los elementos después de él se mueven como si el elemento none nunca hubiera estado ahí.
+*/
+
+/* 
+
+La propiedad visibility: hidden; en CSS se utiliza para ocultar un elemento en una página web, pero a diferencia de display: none;, el elemento oculto sigue ocupando espacio en el diseño (layout) de la página.
+*/
+
+/* 
+La propiedad overflow: hidden; en CSS se utiliza para controlar lo que sucede cuando el contenido de un elemento es más grande que el área de ese elemento. Específicamente, overflow: hidden; oculta cualquier contenido que se desborde fuera del área asignada del contenedor.
+
+La propiedad overflow: auto; en CSS se utiliza para gestionar el contenido desbordado de un contenedor. Cuando se aplica, esta propiedad agrega automáticamente barras de desplazamiento (scrollbars) si el contenido de un elemento es más grande que su contenedor.
+*/
+ /* 
+ El z-index es una propiedad de CSS que controla el orden de apilamiento de los elementos en una página web, determinando qué elementos se colocan delante o detrás de otros. Es especialmente útil cuando tienes elementos que se superponen y necesitas controlar cuál debe aparecer encima de los demás. El z-index solo funciona en elementos que tienen una posición establecida como relative, absolute, fixed, o sticky. Si un elemento tiene position: static (la posición por defecto), no responde a z-index. El valor de z-index puede ser un número entero (positivo o negativo) o auto. Los valores más altos de z-index se apilan sobre los más bajos, lo que significa que un elemento con un z-index de 10 se apilará encima de uno con un z-index de 5.
+ */

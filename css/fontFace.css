@@ -1,0 +1,18 @@
+/* 
+PRIMERA FORMA
+
+@font-face {
+    font-family: "Matemasie";
+    src: url(fonts/Matemasie-Regular.ttf);
+}
+
+h1, p{
+    font-family: Matemasie;
+} */
+
+
+/* SEGUNDA FORMA */
+
+h1 {
+    font-family: "Bungee Tint", sans-serif;
+}

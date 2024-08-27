@@ -1,0 +1,45 @@
+.caja {
+    background: #21295c;
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    /* transition-delay: 2s; */
+}
+
+.caja:hover {
+    background: #9eb3c2;
+    /* width: 400px; */
+    transform: rotate(180deg);
+}
+
+/* 
+La propiedad transition en CSS se utiliza para controlar la velocidad del cambio de las propiedades de un elemento de un estado a otro. Esto permite crear animaciones suaves cuando las propiedades del CSS cambian, como el color, el tamaño, la posición, la opacidad, entre otros.
+
+Componentes de la Propiedad transition
+
+1. transition-property: Especifica qué propiedad o propiedades CSS deben ser animadas. Puede ser un nombre de propiedad específico (como background-color, width, etc.), all para animar todas las propiedades que cambien, o none para no animar ninguna propiedad.
+
+transition-property: background-color, width;
+
+2. transition-duration: Define la duración de la transición. El valor se da en segundos (s) o milisegundos (ms). Si no se especifica, el valor predeterminado es 0s, lo que significa que la transición ocurre instantáneamente.
+
+3. transition-timing-function: Describe cómo se desarrolla la transición en el tiempo. Controla la aceleración de la transición. Algunas de las funciones más comunes son:
+
+ease: Inicia lentamente, acelera en el medio, y luego desacelera al final.
+linear: Transición a velocidad constante.
+ease-in: Comienza lentamente y luego acelera.
+ease-out: Comienza rápido y luego desacelera.
+ease-in-out: Combina ease-in y ease-out.
+También puedes usar la función cubic-bezier para definir una curva personalizada.
+
+transition-timing-function: ease-in-out;
+
+4. transition-delay: Define el tiempo que debe esperar la transición antes de comenzar. Este valor también se especifica en segundos o milisegundos.
+
+transition-delay: 0.2s;
+
+Uso Combinado de la Propiedad transition
+Puedes usar todas estas propiedades juntas en una sola línea usando la propiedad transition:
+
+transition: background-color 0.5s ease-in-out 0.2s;
+*/

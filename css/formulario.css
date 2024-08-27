@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(239, 234, 234);
+    
+}
+
+.formulario {
+    width: 50%;
+    background: #fff;
+    margin: 20px auto;
+    overflow: hidden;
+    
+}
+
+input, textarea {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border: rgba(111, 111, 219, 0.6) solid 2px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(65, 32, 32);
+    border-radius: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(208, 191, 191);
+}
+
+input:focus, textarea:focus {
+    border: rgb(12, 223, 12) solid 2.5px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 80px;
+    font-size: 17px;
+    background: #fff;
+    color: rgb(12, 223, 12);
+    border: solid 2px rgb(12, 223, 12);
+    font-weight:600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(12, 223, 12);
+    color: white;
+}

@@ -1,0 +1,93 @@
+@keyframes colores {
+    /* from{background: #9eb3c2;}
+    to{background: #21295c;} */
+    0%{background: #9EB3C2;}
+    25%{background: #1C7293; width: 300px;}
+    50%{background: #065A82; width: 400px;}
+    75%{background: #1B3B6F; width: 300px;}
+    100%{background: #9EB3C2; width: 200px;}
+}
+
+@keyframes movimiento {
+    /* from{transform: translate(0px);}
+    to{transform: translate(500px);} */
+    0%{transform: translate(0px);}
+    50%{transform: translate(500px);}
+    100%{transform: translate(0px);}
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    /* animation-name: colores; */
+    /* animation-name: movimiento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    animation: movimiento 2s ease infinite;
+}
+
+/* 
+
+Las animaciones en CSS permiten crear movimientos y transiciones más complejas y personalizadas que las que se logran con la propiedad transition. Mientras que transition se activa en respuesta a un cambio de estado (como hover o focus), las animaciones con @keyframes pueden ejecutarse automáticamente y controlar con precisión cómo un elemento cambia a lo largo del tiempo.
+
+Componentes de una Animación en CSS
+
+1. @keyframes: Define la secuencia de estados y cómo se desarrollan los estilos a lo largo de la animación. Dentro de @keyframes, puedes especificar distintos puntos de la animación (usando porcentajes o las palabras clave from y to).
+
+@keyframes example {
+    from {
+        background-color: blue;
+        transform: scale(1);
+    }
+    to {
+        background-color: red;
+        transform: scale(1.5);
+    }
+}
+
+2. animation-name: Especifica el nombre de la animación que se va a aplicar, que debe coincidir con el nombre dado en @keyframes.
+
+animation-name: example;
+
+3. animation-duration: Define cuánto tiempo tomará la animación completa desde el principio hasta el final. Se puede especificar en segundos (s) o milisegundos (ms).
+
+animation-duration: 2s;
+
+4. animation-timing-function: Controla la aceleración de la animación, similar a transition-timing-function. Puedes usar valores como linear, ease, ease-in, ease-out, ease-in-out, o una curva personalizada con cubic-bezier.
+
+animation-timing-function: ease-in-out;
+
+5. animation-delay: Especifica cuánto tiempo debe esperar la animación antes de comenzar después de ser aplicada.
+
+animation-delay: 1s;
+
+6. animation-iteration-count: Define cuántas veces se repetirá la animación. Puede ser un número específico, o la palabra clave infinite para repetir la animación indefinidamente.
+
+animation-iteration-count: infinite;
+
+7. animation-direction: Especifica si la animación debe reproducirse hacia adelante, hacia atrás, o alternar entre ambas direcciones.
+
+- normal: La animación se reproduce hacia adelante (por defecto).
+- reverse: La animación se reproduce en sentido inverso.
+- alternate: La animación se reproduce hacia adelante, luego hacia atrás en la siguiente iteración.
+- alternate-reverse: La animación se reproduce hacia atrás, luego hacia adelante en la siguiente iteración.
+
+animation-direction: alternate;
+
+8. animation-fill-mode: Define cómo se aplican los estilos de la animación antes y después de su ejecución.
+
+- none: No se aplican estilos antes o después de la ejecución.
+- forwards: Retiene el estilo del último fotograma después de que la animación termina.
+- backwards: Aplica el estilo del primer fotograma antes de que comience la animación.
+- both: Aplica tanto forwards como backwards.
+
+animation-fill-mode: forwards;
+
+9. animation-play-state: Permite pausar y reanudar la animación.
+
+running: La animación está en marcha (por defecto).
+paused: La animación está pausada
+
+animation-play-state: paused;
+*/

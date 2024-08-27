@@ -1485,20 +1485,795 @@ ol {
 
 # 57. [PRACTICA] Diseñando un menu de navegacion horizontal
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de navegacion con listas</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+
+</body>
+
+</html>
+```
+
+```css
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+.menu li a:hover {
+    background: #ef8354;
+    color: white;
+}
+```
+
+![](imagenes/20.PNG)
+
 # 58. Tablas
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link rel="stylesheet" href="tablas.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Pais</th>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>20</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Alejandro</td>
+            <td>21</td>
+            <td>España</td>
+        </tr>
+    </table>
+</body>
+</html>
+```
+
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, td, th {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px 20px;
+}
+
+th {
+    background: #009ddc;
+    color: white;
+}
+
+tr:hover {
+    background: #e5e5e5;
+}
+```
+
+![](imagenes/21.PNG)
 
 # 59. [PRACTICA] Diseñando un formulario de contacto
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form class="formulario">
+        <input type="text" placeholder="Nombre">
+        <input type="email" placeholder="Correo">
+        <textarea placeholder="Mensaje"></textarea>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
+```
+
+```css
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(239, 234, 234);
+    
+}
+
+.formulario {
+    width: 50%;
+    background: #fff;
+    margin: 20px auto;
+    overflow: hidden;
+    
+}
+
+input, textarea {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border: rgba(111, 111, 219, 0.6) solid 2px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(65, 32, 32);
+    border-radius: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(208, 191, 191);
+}
+
+input:focus, textarea:focus {
+    border: rgb(12, 223, 12) solid 2.5px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 80px;
+    font-size: 17px;
+    background: #fff;
+    color: rgb(12, 223, 12);
+    border: solid 2px rgb(12, 223, 12);
+    font-weight:600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(12, 223, 12);
+    color: white;
+}
+```
+
+![](imagenes/22.PNG)
+
 # 60. Propiedad Transform
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="stylesheet" href="transform.css">
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>
+```
+
+```css
+.caja {
+    background: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /* transform: translate(200px); */
+    /* transform: translateX(200px); */
+    /* transform: translateY(400px); */
+    /* transform: scale(2,2); */
+    /* transform: rotate(10deg); */
+    /* transform: skew(20deg, 0deg); */
+    transform: translate(200px) scale(1.5, 1.5) rotate(10deg);
+}
+```
+
+![](imagenes/23.PNG)
 
 # 61. Transiciones
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="transiciones.css">
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>
+```
+
+```css
+.caja {
+    background: #21295c;
+    width: 200px;
+    height: 200px;
+    transition: 1s ease;
+    /* transition-delay: 2s; */
+}
+
+.caja:hover {
+    background: #9eb3c2;
+    /* width: 400px; */
+    transform: rotate(180deg);
+}
+
+/* 
+La propiedad transition en CSS se utiliza para controlar la velocidad del cambio de las propiedades de un elemento de un estado a otro. Esto permite crear animaciones suaves cuando las propiedades del CSS cambian, como el color, el tamaño, la posición, la opacidad, entre otros.
+
+Componentes de la Propiedad transition
+
+1. transition-property: Especifica qué propiedad o propiedades CSS deben ser animadas. Puede ser un nombre de propiedad específico (como background-color, width, etc.), all para animar todas las propiedades que cambien, o none para no animar ninguna propiedad.
+
+transition-property: background-color, width;
+
+2. transition-duration: Define la duración de la transición. El valor se da en segundos (s) o milisegundos (ms). Si no se especifica, el valor predeterminado es 0s, lo que significa que la transición ocurre instantáneamente.
+
+3. transition-timing-function: Describe cómo se desarrolla la transición en el tiempo. Controla la aceleración de la transición. Algunas de las funciones más comunes son:
+
+ease: Inicia lentamente, acelera en el medio, y luego desacelera al final.
+linear: Transición a velocidad constante.
+ease-in: Comienza lentamente y luego acelera.
+ease-out: Comienza rápido y luego desacelera.
+ease-in-out: Combina ease-in y ease-out.
+También puedes usar la función cubic-bezier para definir una curva personalizada.
+
+transition-timing-function: ease-in-out;
+
+4. transition-delay: Define el tiempo que debe esperar la transición antes de comenzar. Este valor también se especifica en segundos o milisegundos.
+
+transition-delay: 0.2s;
+
+Uso Combinado de la Propiedad transition
+Puedes usar todas estas propiedades juntas en una sola línea usando la propiedad transition:
+
+transition: background-color 0.5s ease-in-out 0.2s;
+*/
+```
+
 # 62. Animaciones
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>
+```
+
+```css
+@keyframes colores {
+    /* from{background: #9eb3c2;}
+    to{background: #21295c;} */
+    0%{background: #9EB3C2;}
+    25%{background: #1C7293; width: 300px;}
+    50%{background: #065A82; width: 400px;}
+    75%{background: #1B3B6F; width: 300px;}
+    100%{background: #9EB3C2; width: 200px;}
+}
+
+@keyframes movimiento {
+    /* from{transform: translate(0px);}
+    to{transform: translate(500px);} */
+    0%{transform: translate(0px);}
+    50%{transform: translate(500px);}
+    100%{transform: translate(0px);}
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background: #9eb3c2;
+    /* animation-name: colores; */
+    /* animation-name: movimiento;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    animation: movimiento 2s ease infinite;
+}
+
+/* 
+
+Las animaciones en CSS permiten crear movimientos y transiciones más complejas y personalizadas que las que se logran con la propiedad transition. Mientras que transition se activa en respuesta a un cambio de estado (como hover o focus), las animaciones con @keyframes pueden ejecutarse automáticamente y controlar con precisión cómo un elemento cambia a lo largo del tiempo.
+
+Componentes de una Animación en CSS
+
+1. @keyframes: Define la secuencia de estados y cómo se desarrollan los estilos a lo largo de la animación. Dentro de @keyframes, puedes especificar distintos puntos de la animación (usando porcentajes o las palabras clave from y to).
+
+@keyframes example {
+    from {
+        background-color: blue;
+        transform: scale(1);
+    }
+    to {
+        background-color: red;
+        transform: scale(1.5);
+    }
+}
+
+2. animation-name: Especifica el nombre de la animación que se va a aplicar, que debe coincidir con el nombre dado en @keyframes.
+
+animation-name: example;
+
+3. animation-duration: Define cuánto tiempo tomará la animación completa desde el principio hasta el final. Se puede especificar en segundos (s) o milisegundos (ms).
+
+animation-duration: 2s;
+
+4. animation-timing-function: Controla la aceleración de la animación, similar a transition-timing-function. Puedes usar valores como linear, ease, ease-in, ease-out, ease-in-out, o una curva personalizada con cubic-bezier.
+
+animation-timing-function: ease-in-out;
+
+5. animation-delay: Especifica cuánto tiempo debe esperar la animación antes de comenzar después de ser aplicada.
+
+animation-delay: 1s;
+
+6. animation-iteration-count: Define cuántas veces se repetirá la animación. Puede ser un número específico, o la palabra clave infinite para repetir la animación indefinidamente.
+
+animation-iteration-count: infinite;
+
+7. animation-direction: Especifica si la animación debe reproducirse hacia adelante, hacia atrás, o alternar entre ambas direcciones.
+
+- normal: La animación se reproduce hacia adelante (por defecto).
+- reverse: La animación se reproduce en sentido inverso.
+- alternate: La animación se reproduce hacia adelante, luego hacia atrás en la siguiente iteración.
+- alternate-reverse: La animación se reproduce hacia atrás, luego hacia adelante en la siguiente iteración.
+
+animation-direction: alternate;
+
+8. animation-fill-mode: Define cómo se aplican los estilos de la animación antes y después de su ejecución.
+
+- none: No se aplican estilos antes o después de la ejecución.
+- forwards: Retiene el estilo del último fotograma después de que la animación termina.
+- backwards: Aplica el estilo del primer fotograma antes de que comience la animación.
+- both: Aplica tanto forwards como backwards.
+
+animation-fill-mode: forwards;
+
+9. animation-play-state: Permite pausar y reanudar la animación.
+
+running: La animación está en marcha (por defecto).
+paused: La animación está pausada
+
+animation-play-state: paused;
+*/
+```
 
 # 63. Como utilizar fuentes personalizadas
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FontFace</title>
+
+    <!-- SEGUNDA FORMA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="fontFace.css">
+</head>
+
+<body>
+    <h1>Hola Mundo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis omnis in qui cumque ipsum accusamus possimus
+        eaque quam maxime provident aperiam fuga commodi, blanditiis velit nihil corrupti accusantium eos voluptas.</p>
+</body>
+
+</html>
+```
+
+```css
+/* 
+PRIMERA FORMA
+
+@font-face {
+    font-family: "Matemasie";
+    src: url(fonts/Matemasie-Regular.ttf);
+}
+
+h1, p{
+    font-family: Matemasie;
+} */
+
+
+/* SEGUNDA FORMA */
+
+h1 {
+    font-family: "Bungee Tint", sans-serif;
+}
+```
+
 # 64. [PRACTICA] Diseñando una plantilla con float
 
-# 65. [PRACTICA] Dandole estilos CSS a nuestro layout 1 - Inicio y header
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Sencilla</title>
+    <link rel="stylesheet" href="plantillaSencilla.css">
+</head>
+<body>
+    <div class="principal">
+        <header>
+            <h2>Header de nuestra pagina</h2>
+        </header>
+        <section>
+            <article>
+                <h1>Titulo del articulo</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptates iure tempora reprehenderit porro cupiditate veniam esse quis quae, iusto, ab, ex sit corrupti dolore dolorem fugit quo rerum error!</p>
+            </article>
+            <aside>
+                <h3>Sidebar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore dicta repellat adipisci ducimus earum perferendis cumque totam pariatur aperiam quis expedita sapiente nesciunt dolore debitis animi deserunt, tempore sed.</p>
+            </aside>
+        </section>
+        <footer>
+            <p>Pagina creada por Walter Suel</p>
+        </footer>
+    </div>
+</body>
+</html>
+```
 
+```css
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    width: 80%;
+    background-color: rgb(218, 196, 196);
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(38, 34, 34);
+    height: 80px;
+    line-height: 80px;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    width: 70%;
+    float: left;
+    padding: 15px;
+    background-color: white;
+}
+
+aside {
+    width: 30%;
+    background-color: rgb(220, 169, 57);
+    float: left;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+aside p {
+    color: white;
+}
+
+h3 {
+    font-size: 25px;
+    color: white;
+}
+
+footer {
+    background-color: rgb(97, 86, 86);
+    display: inline-block;
+    color: white;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+}
+
+footer p {
+
+    font-size: 20px;
+    margin: 15px 20px;
+}
+```
+
+![](imagenes/24.PNG)
+
+# 65. [PRACTICA] Dandole estilos CSS a nuestro layout 1 - Inicio y header
 # 66. [PRACTICA] Dandole estilos CSS a nuestro layout 2 - Main, Aside y footer
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Básica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="main">
+            <div class="imagen">
+                <img src="img/bg.jpg" alt="">
+            </div>
+            <section class="post">
+                <article>
+                    <h2>Titulo del Articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore, incidunt animi itaque aperiam
+                        molestiae inventore quisquam provident tempore delectus assumenda. Reprehenderit esse, qui animi
+                        id minus similique at quisquam.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore, incidunt animi itaque aperiam
+                        molestiae inventore quisquam provident tempore delectus assumenda. Reprehenderit esse, qui animi
+                        id minus similique at quisquam.
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <aside>
+            <div class="widget">
+                <h3 class="titulo">Articulos Destacados</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consecteur adipisincng elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consecteur adipisincng elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consecteur adipisincng elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consecteur adipisincng elit</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit amet, consecteur adipisincng elit</a></li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3 class="titulo">Informacion</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illo quas earum sit? Ea eligendi et
+                    suscipit est quaerat dolor deserunt ex sed ipsa, officia dolorum, veritatis deleniti, adipisciab.
+                </p>
+            </div>
+        </aside>
+
+        <footer>
+            <p>Walter Suel 2024 - Todos los Derechos Reservados</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: #4a465b;
+}
+
+.contenedor {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+header {
+    background-color: #fff;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul{
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #000;
+}
+
+header nav ul li a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.main {
+    width: 700px;
+    background-color: #fff;
+    float: left;
+}
+
+.main .imagen {
+    width: 100%;
+}
+
+.main .imagen img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.main .post {
+    width: 100%;
+    padding: 40px;
+}
+
+.main .post article h2 {
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .post article p {
+    margin-bottom: 15px;
+    line-height: 27px;
+}
+
+aside {
+    width: 300px;
+    background-color: #161f26;
+    padding: 20px;
+    color: #fff;
+    float: left;
+}
+
+aside .widget {
+    margin-bottom: 20px;
+}
+
+aside .widget .titulo {
+    color: #ff8000;
+    border-bottom: 1px solid #ff8000;
+    margin-bottom: 10px;
+}
+
+aside .widget ul {
+    list-style: none;
+}
+
+aside .widget ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0px;
+}
+
+aside .widget ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover {
+    color: #8f8f8f;
+}
+
+aside .widget p {
+    line-height: 27px;
+}
+
+footer {
+    width: 70%;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+```
